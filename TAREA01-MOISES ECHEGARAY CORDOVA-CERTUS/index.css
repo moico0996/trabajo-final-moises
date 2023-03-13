@@ -1,0 +1,86 @@
+@import url(mision.css);
+
+
+
+.jumbotron{
+    width: 100%;
+    height: auto;
+    color: white;
+    background-image:url(imagenes/WhatsApp\ Image\ 2023-03-12\ at\ 2.18.39\ PM.jpeg) ;
+    background-size: 100% 100%;
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+.h1{
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.h4{
+    text-align: right;
+    color: orange;
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.jumbotron  img{
+  width: 100px;
+  display: none;
+  
+  
+  
+}
+
+
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+  }
+  
+  
+
+
+
+
+
+  /* Remove the jumbotron's default bottom margin */ 
+   .jumbotron {
+    margin-bottom: 0;
+  }
+ 
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px; 
+  }
+  @media screen and (max-width: 768px) {
+    .jumbotron{
+      width: 100%;
+      height: 170px;
+      background-image: url(imagenes/banner.jpg); 
+      
+    }
+    .h4{
+      text-align: center;
+
+    }
+    .h1{
+      text-align: center;
+    }
+
+    .jumbotron img{
+      display: block;
+      margin: auto;
+    }
+  }

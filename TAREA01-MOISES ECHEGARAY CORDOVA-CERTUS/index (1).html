@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plataforma web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@500&family=Oswald:wght@200&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="carrrex.css">
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+<!--titulo principal de la pagina-->  
+<div class="jumbotron">
+  <div class="container text-right">
+    <img class="img img-responsive" id="logo" src="imagenes/logo_small.png" alt="">
+    <p class="h1">VIAJEROS SIN TIEMPO</p>     
+    <p class="h4">Planifica tu propio viaje!</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" onclick="aumentar()"   href="#logo">Logo</a>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="contacto.html">contacto</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#mostrador">Noticias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        
+
+      </ul>
+      <!--navegacion de formulario-formulario-usuario y comprar carrito de compras-->
+      <ul class="nav navbar-nav navbar-right">
+        <!--los archivos se encuentran en la carpeta java- doc: app.js, formulario.html y validacion.html-->
+        <li><a href="java/formulario.html"><span class="glyphicon glyphicon-user"></span> Formulario</a></li>
+        
+        <!--se encuentra en la carpeta fotosEnlaces: indeex.js, usuario.css y usuario.html-->
+        <li><a href="enlaces/usuario.html"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+      
+      </ul>
+    </div>
+  </div>  
+</nav>
+
+<!--SERVICIOS QUE BRINDA LA EMPRESA-->
+<div class="container-fluid text-center bg-grey" >
+    <h2>SERVICIOS </h2>
+    <h4>¿Qué ofrecemos?</h4>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-off"></span>
+        <h4>MARKETING</h4>
+        <p>Edicion de videos...</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-heart"></span>
+        <h4>PLATAFORMA WEB</h4>
+        <p>Inclusion en nuestro proyecto..</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-lock"></span>
+        <h4>PROMOCION</h4>
+        <p>A traves de nuestra plataforma web e redes sociales...</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-leaf"></span>
+        <h4>INVENTARIO</h4>
+        <p>Pertenencia a nuestro inventario web..</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-certificate"></span>
+        <h4>CERTIFICADO</h4>
+        <p>brindamos certificado por pertenecer a nuestra red..</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-wrench"></span>
+        <h4 style="color:#303030;">CAPACITACION</h4>
+        <p>capacitacion en promocion y mejorar de la empresa...</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+   <!--noticias que brindara la pagina, enlazada a otras para ver detalles de noticias -->
+<h3 class="h3 text-center bg-warning "  >  CENTRO DE NOTICIAS</h3>
+<div class="container " id="productosComerce"  >    
+  <div class="row" id="mostrador"  >
+    <div class="col-sm-9"  >
+      <div class="item panel panel-primary ">
+        <p id="modelo"  class="panel-heading">NOTICIAS</p>
+        <div id="img"   class="panel-body"><img src="imagenes/trujillo.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div id="descripcion"  class="panel-footer"></div>				
+        <a href=""  class="btn btn-lg btn-block btn-outline-primary">Ver mas...</a>
+        
+      </div>
+
+    </div>
+
+    <div class="col-sm-3"> 
+      <div class="item panel panel-primary">
+        <div id="produc-title"  class="panel-heading">HUANCHACO CULTURAL</div>
+        <div  id="produc-image"  class="panel-body"><img src="imagenes/huanchaco-beach.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div id="produc-descrip" class="panel-footer"></div>
+				<a href="detalle.html" class="btn btn-lg btn-block btn-outline-primary">Ver mas...</a>
+      </div>
+      <div class="item panel panel-primary">
+        <div id="produc-title"  class="panel-heading">HUANCHACO CULTURAL</div>
+        <div  id="produc-image"  class="panel-body"><img src="imagenes/huanchaco-beach.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div id="produc-descrip" class="panel-footer"></div>
+				<a href="detalle.html" class="btn btn-lg btn-block btn-outline-primary">Ver mas...</a>
+      </div>
+
+    </div>
+
+
+  </div>
+</div><br>
+
+<!--container de productos y seleccion de carrito de compras-->
+<!--<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div id="produc-title"  class="panel-heading">CONACHE</div>
+        <div   id="produc-image"   class="panel-body"><img src="imagenes/chan-chan-ciudad-de-adobe-600x400.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div id="produc-descrip"   class="panel-footer">Planifica tu viaje de visita a chan chan</div>
+        <p id="produc-precio"  class="card-text"><h3 class="card-title pricing-card-title text-center">PEN 35.00 </h3></p>
+				<a href="detalle.html" class="btn btn-lg btn-block btn-outline-primary">Ver detalle</a>
+        <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+      </div>
+    </div>
+
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div id="produc-title"   class="panel-heading">BALNEARIO DE HUANCHACO</div>
+        <div id="produc-image"   class="panel-body"><img src="imagenes/f3ad2acf28c111aec93c9059d823288a.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div id="produc-descrip"   class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        <p id="produc-precio"  class="card-text"><h3 class="card-title pricing-card-title text-center">PEN 35.00 </h3></p>
+				<a href="detalle.html" class="btn btn-lg btn-block btn-outline-primary">Ver detalle</a>
+        <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div id="produc-title"   class="panel-heading">PUERTO DE SALAVERRY</div>
+        <div id="produc-image"  class="panel-body"><img src="imagenes/PlazaSalaverry.jfif" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div id="produc-descrip"  class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        <p id="produc-precio"   class="card-text"><h3 class="card-title pricing-card-title text-center">PEN 35.00 </h3></p>
+				<a href="detalle.html" class="btn btn-lg btn-block btn-outline-primary">Ver detalle</a>
+        <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+      </div>
+    </div>
+  </div>
+
+</div><br><br><!-->
+<hr>
+
+<!--titulo de carrito-->
+<p class="h2 text-center bg-warning"  >PRODUCTOS TURISTICOS</p>
+ <section class="contenedor">
+
+        <!-- Contenedor de elementos del carrito de compras lo podemos encontrar con el css carrex.css y el js con carrito.js -->
+        <div class="contenedor-items bg-grey " id="productos" >
+            <div class="item">
+                <span class="titulo-item">Plaza de Armas</span>
+                <img src="imagenes/R (1).jfif" alt="" class="img-item">
+                <span class="precio-item">S/.15.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Huanchaco</span>
+                <img src="imagenes/000734715W.jpg" alt="" class="img-item">
+                <span class="precio-item">S/.25.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Chan Chan</span>
+                <img src="imagenes/chan-chan-ciudad-de-adobe-600x400.jpg" alt="" class="img-item">
+                <span class="precio-item">S/.35.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary bg-grey">Ver video</a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Conache</span>
+                <img src="imagenes/dddd.jpg" alt="" class="img-item">
+                <span class="precio-item">S/.18.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Huanchaco</span>
+                <img src="imagenes/huanchaco-beach.jpg" alt="" class="img-item">
+                <span class="precio-item">S/.20.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Salaverry</span>
+                <img src="imagenes/PlazaSalaverry.jfif" alt="" class="img-item">
+                <span class="precio-item">S/.18.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Muelle</span>
+                <img src="imagenes/f3ad2acf28c111aec93c9059d823288a.jpg" alt="" class="img-item">
+                <span class="precio-item">S/.10.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cultura Muchick</span>
+                <img src="imagenes/R.jfif" alt="" class="img-item">
+                <span class="precio-item">S/.30.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Playa</span>
+                <img src="imagenes/000734715W.jpg" alt="" class="img-item">
+                <span class="precio-item">S/.20.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+                <a href="videos/video.html" class="btn btn-lg btn-block btn-outline-primary">Ver video</a>
+            </div>
+        </div>
+        <!-- Carrito de Compras  -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <!--boton para pagar aun no completado-->
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button><br>
+                <!--boton para imprimir el itinerario-->
+                <button class="btn-pagar">Itinerario <i class="fa-solid fa-bag-shopping"></i> </button>
+                
+            </div>
+        </div>
+    </section>
+    <hr>
+ 
+<!-- Contenedor de correo para que puedan mandar comentarios en las mejoras de la pagina-->
+<form class="container-fluid bg-grey" id="contacto" onsubmit="return ingresar()">
+  <h2 class="text-center">CONTACTO</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Director General</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Trujillo, la libertad</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 999987792</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@example.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <p id="dimo"></p>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="id" name="id" placeholder="Email" type="email" required>
+          <p id="domo"></p>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <p id="com"></p>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit" onclick="ingresar()"  >Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<hr>
+<!--correo para recibir notificaciones -->
+<footer class="container-fluid text-center" onsubmit="return aumentar()"   >
+  <p>Suscribete y recibe nuestra informacion</p>  
+  <form class="form-inline">Correo
+    <input type="email" id="emaill"  class="form-control" size="50" placeholder="ingresa tu Email">
+    <p id="fott" ></p>
+    <button type="button" class="btn btn-danger">Registro</button>
+  </form>
+</footer>
+
+
+
+<script src="index.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>
